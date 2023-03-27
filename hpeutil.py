@@ -24,8 +24,7 @@ UNIDEN_OBFUSCATION_KEY = 0xC
 def xor_byte(byte: bytes) -> bytes:
   order = 'little'
   byte_as_int = int.from_bytes(byte, order)
-  key_as_int = UNIDEN_OBFUSCATION_KEY
-  xored = byte_as_int ^ key_as_int
+  xored = byte_as_int ^ UNIDEN_OBFUSCATION_KEY
 
   return xored.to_bytes(1, order)
 
