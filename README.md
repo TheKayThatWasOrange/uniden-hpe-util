@@ -18,11 +18,11 @@ Assuming that the executable bit is still set on the file:
 
 ### Decoding
 
-    `./hpeutil.py decode social_security_check_cashing_services.hpe`
+`./hpeutil.py decode social_security_check_cashing_services.hpe`
 
 ### Encoding
 
-    `./hpeutil.py encode social_security_check_cashing_services.txt`
+`./hpeutil.py encode social_security_check_cashing_services.txt`
 
 # What's In An HPE File Anyway?
 
