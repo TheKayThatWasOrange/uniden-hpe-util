@@ -43,3 +43,11 @@ File	HomePatrol Export File
 ```
 
 Your best bet is to create one of the channels you need in Sentinel manually, export that to HPE, run this tool and then write whatever you need to extend that example file. Once you're done, convert it back to HPE and go import it into Sentinel. If you're extremely lucky it'll actually work and Santa will bring you a scanner that is slightly less crippled with your Trumpy Bear this year. If it doesn't work, feel free to figure out why and send me a pull request.
+
+# Getting Senitnel To Run Without Windows
+
+1. Install [CrossOver](https://www.codeweavers.com/crossover)
+2. Download one of their pre-packaged ["bottles"](https://www.codeweavers.com/xfer/Dependency_archive/) that includes the .NET framework
+3. Import the bottle you downloaded
+4. Install Sentinel into that same bottle
+5. Profit
