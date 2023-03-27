@@ -31,7 +31,7 @@ def xor_byte(byte: bytes) -> bytes:
 
   return xored.to_bytes(1, UNIDEN_BYTE_ORDER)
 
-def decode_hpe_file(file_path: str, cleanup: bool):
+def hpe_to_txt(file_path: str, cleanup: bool):
   path, _ = os.path.splitext(file_path)
   temp_gzip_file = f"{path}_tmp_decoding.gz"
   dest_file = f"{path}_decoded.txt"
@@ -53,7 +53,7 @@ def decode_hpe_file(file_path: str, cleanup: bool):
     if cleanup:
       os.remove(temp_gzip_file)
   
-def encode_hpe_file(file_path: str, cleanup: bool):
+def txt_to_hpe(file_path: str, cleanup: bool):
   path, _ = os.path.splitext(file_path)
   temp_gzip_file = f"{path}_tmp_encoding.gz"
   dest_file = f"{path}_encoded.hpe"
@@ -84,7 +84,7 @@ if __name__ == "__main__":
   args = parser.parse_args()
 
   if args.operation == 'decode':
-    decode_hpe_file(args.filename, args.no_cleanup == False)
+    hpe_to_txt(args.filename, args.no_cleanup == False)
   elif args.operation == 'encode':
-    encode_hpe_file(args.filename, args.no_cleanup == False)
+    txt_to_hpe(args.filename, args.no_cleanup == False)
 
