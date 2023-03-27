@@ -84,3 +84,4 @@ if __name__ == "__main__":
     decode_hpe_file(args.filename)
   elif args.operation == 'encode':
     encode_hpe_file(args.filename)
+    
