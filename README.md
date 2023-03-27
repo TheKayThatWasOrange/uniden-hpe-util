@@ -8,9 +8,11 @@ You can't even clone an existing channel and just type in the new frequency to s
 
 Some angry stepdads will smugly point out that there's an [aftermarket application](https://proscan.org/) you can PayPal some flag-waving geezer $50 for if you want more automation capabilities, but it is similar to Uniden's own offering in that it will only run on a Gateway PC your grandson set up for you 30 years ago to get you to stop making him wooden toys he had to throw away. Also every cent that flies through PayPal results in Peter Thiel's ego getting bigger and I think we've all had quite enough of that.
 
-Luckily, [this person](https://github.com/sq5bpf/hpe_open) found out that `.hpe` files are nothing more than XORed GZip files which can be converted to/from plain text pretty easily. Once you get something tab-delimited to work with, you can use any tool you like on any platform imaginable to modify that text and pump it back into Uniden's awful Sentinel application.
+Luckily, [this person](https://github.com/sq5bpf/hpe_open) found out that `.hpe` files are nothing more than XORed GZip files which can be converted to/from plain text pretty easily. Unluckily, his makefile doesn't work anywhere so I just translated the basic process into reasonably modern Python. I say that having written zero Python in the last two years so my idea of "reasonably modern" may be utterly laughable.
 
-This tool is a proof-of-concept in Python 3. It has no meaningful error handling of any kind and even less technical support but it's free.
+Once you get something tab-delimited to work with, you can use any tool you like on any platform imaginable to modify that text and pump it back into Uniden's awful Sentinel application.
+
+This tool is a proof-of-concept. It has no meaningful error handling of any kind and even less technical support but it's free. Just like freedom itself.
 
 # Usage
 
