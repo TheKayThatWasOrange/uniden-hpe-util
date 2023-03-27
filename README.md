@@ -18,15 +18,15 @@ This tool is a proof-of-concept. It has no meaningful error handling of any kind
 
 Assuming that the executable bit is still set on the file:
 
-## Decoding
+### Decoding
 
-    `./hpeutil.py decode test.hpe`
+    `./hpeutil.py decode social_security_check_cashing_services.hpe`
 
-## Encoding
+### Encoding
 
-    `./hpeutil.py encode test.txt`
+    `./hpeutil.py encode social_security_check_cashing_services.txt`
 
-## What's In An HPE File Anyway?
+# What's In An HPE File Anyway?
 
 They look like this:
 
