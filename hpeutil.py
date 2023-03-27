@@ -18,7 +18,10 @@ import os
 import shutil
 
 # This is what passes for clever in many
-# parts of the world. 
+# parts of the world. Maybe Uniden would
+# sell more scanners if they stopped being
+# clever and stuck to CSV files the entire
+# world can work with.
 UNIDEN_OBFUSCATION_KEY = 0xC
 
 def xor_byte(byte: bytes) -> bytes:
