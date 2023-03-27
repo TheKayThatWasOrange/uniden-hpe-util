@@ -35,18 +35,19 @@ def decode_hpe_file(file_path: str):
 
   print(f"Decoding to {dest_file}...")
 
-  # De-XOR to .gz
-  with open(file_path, "rb") as source:
-    with open(temp_gzip_file, "wb") as dest:
-      while (byte := source.read(1)):
-        dest.write(xor_byte(byte))
-  
-  # Gunzip to .txt
-  with gzip.open(temp_gzip_file, "rb") as zipped:
-    with open(dest_file, "wb") as unzipped:
-      shutil.copyfileobj(zipped, unzipped)
-
-  os.remove(temp_gzip_file)
+  try:
+    # De-XOR to .gz
+    with open(file_path, "rb") as source:
+      with open(temp_gzip_file, "wb") as dest:
+        while (byte := source.read(1)):
+          dest.write(xor_byte(byte))
+    
+    # Gunzip to .txt
+    with gzip.open(temp_gzip_file, "rb") as zipped:
+      with open(dest_file, "wb") as unzipped:
+        shutil.copyfileobj(zipped, unzipped)
+  finally:
+    os.remove(temp_gzip_file)
   
 def encode_hpe_file(file_path: str):
   path, _ = os.path.splitext(file_path)
@@ -55,19 +56,20 @@ def encode_hpe_file(file_path: str):
 
   print(f"Encoding to {dest_file}...")
 
-  # Gzip with very minimal compression so Uniden's
-  # god-awful .NET code from the 90s can handle it. 
-  with open(file_path, "rb") as source:
-    with gzip.open(temp_gzip_file, "wb", compresslevel=1) as zipped:
-      zipped.writelines(source)
+  try:
+    # Gzip with very minimal compression so Uniden's
+    # god-awful .NET code from the 90s can handle it. 
+    with open(file_path, "rb") as source:
+      with gzip.open(temp_gzip_file, "wb", compresslevel=1) as zipped:
+        zipped.writelines(source)
 
-  # XOR to .hpe
-  with open(dest_file, "wb") as dest:
-    with open(temp_gzip_file, "rb") as zipped:
-      while (byte := zipped.read(1)):
-        dest.write(xor_byte(byte))
-
-  os.remove(temp_gzip_file)
+    # XOR to .hpe
+    with open(dest_file, "wb") as dest:
+      with open(temp_gzip_file, "rb") as zipped:
+        while (byte := zipped.read(1)):
+          dest.write(xor_byte(byte))
+  finally:
+    os.remove(temp_gzip_file)
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description="Tool for dealing with Uniden's offshore cubicle software")
