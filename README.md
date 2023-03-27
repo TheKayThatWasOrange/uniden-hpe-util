@@ -6,7 +6,7 @@ Need to add thousands and thousands of custom channels which no unemployable boo
 
 You can't even clone an existing channel and just type in the new frequency to speed through the tedium. Sentinel is every bit as bad as Robotech II: The Sentinels. Probably worse.
 
-Some angry stepdads will smugly point out that there's an [aftermarket application](https://proscan.org/) you can PayPal some flag-waving geezer $50 for if you want more automation capabilities, but it is similar to Uniden's own offering in that it will only run on a Gateway PC your grandson set up for you 30 years ago to "thank" you for all the handmade wooden toys he threw away. Also every cent that flies through PayPal results in Peter Thiel's ego swelling faster than his prostate and I think we've all had quite enough of that.
+Some angry stepdads will smugly point out that there's a cataract-inducing [aftermarket application](https://proscan.org/) you can PayPal some flag-waving geezer $50 for if you want more automation capabilities, but it is similar to Uniden's own offering in that it will only run on a Gateway PC your grandson set up for you 30 years ago to "thank" you for all the handmade wooden toys he threw away. Also every cent that flies through PayPal results in Peter Thiel's ego swelling faster than his prostate and I think we've all had quite enough of that.
 
 Luckily, [this person](https://github.com/sq5bpf/hpe_open) found out that `.hpe` files are nothing more than XORed GZip files which can be converted to/from plain text pretty easily. Unluckily, his makefile doesn't work anywhere so I just translated the basic process into reasonably modern Python. I say that having written zero Python in the last two years so my idea of "reasonably modern" may be "utterly laughable." I basically just used the walrus operator. Twice.
 
@@ -15,6 +15,8 @@ Once you get something tab-delimited to work with, you can use any tool you like
 This tool is a proof-of-concept. It has no meaningful error handling of any kind and even less technical support but it's free. Just like freedom itself.
 
 # Usage
+
+Assuming that the executable bit is still set on the file:
 
 ## Decoding
 
