@@ -10,7 +10,9 @@ Luckily, [this person](https://github.com/sq5bpf/hpe_open) found out that `.hpe`
 
 Once you get something tab-delimited to work with you can use any tool you like on any platform imaginable to modify that text and pump it back into Uniden's awful Sentinel application.
 
-This tool is a proof-of-concept. It has no meaningful error handling of any kind and even less technical support but it's free. Just like freedom itself.
+# Disclaimer
+
+This tool is a proof-of-concept devoid of any warranty. It has no meaningful error handling of any kind and even less technical support but it's free. Just like freedom itself.
 
 # Usage
 
