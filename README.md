@@ -2,7 +2,7 @@
 
 If you want to use an absurdly expensive Uniden brand radio scanner that doesn't even come with its own GPS tranceiver you have to contend with some seriously asstastic Windows software known as [Sentinel](http://info.uniden.com/twiki/bin/view/UnidenMan4/BCDx36HPSentinel) to program custom channel information into it. Sentinel's automation capabilities begin and end with the importing/exporting of opaque, undocumented `.hpe` files. Uniden assumes that the HPE files you want are already on the internet and tells you to kick rocks if they aren't.
 
-Need to add thousands and thousands of custom channels which no unemployable boomer in the world has ever cared enough about to post on some radio dork forum for radio dorks? Well you get to sit there and create them yourself one-by-friggin-one because Uniden hates you.
+Need to add thousands and thousands of custom channels which no unemployable boomer in the world has ever cared enough about to post on some radio dork forum for radio dorks? Well you get to sit there and create them yourself one-by-friggin-one because Uniden hates you for having a job.
 
 You can't even clone an existing channel and just type in the new frequency to speed through the tedium. Sentinel is every bit as bad as Robotech II: The Sentinels. Probably worse.
 
@@ -42,4 +42,4 @@ C-Freq			163.0625	Off	163062500	FM	TONE=Srch	208	Off	2	0	Off	Auto
 File	HomePatrol Export File
 ```
 
-Your best bet is to create one of the channels you need in Sentinel manually, export that to HPE, run this tool and then write whatever you need to extend that example file. Once you're done, convert it back to HPE and go import it into Sentinel. If you're extremely lucky, it'll actually work and Santa will bring you a scanner that is slightly less crippled with your Trumpy Bear this year.
+Your best bet is to create one of the channels you need in Sentinel manually, export that to HPE, run this tool and then write whatever you need to extend that example file. Once you're done, convert it back to HPE and go import it into Sentinel. If you're extremely lucky, it'll actually work and Santa will bring you a scanner that is slightly less crippled with your Trumpy Bear this year. If it doesn't work, feel free to figure out why and send me a pull request.
