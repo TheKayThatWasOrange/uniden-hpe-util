@@ -5,3 +5,13 @@ If you want to use a Uniden brand radio scanner you have to contend with some se
 Luckily, [this person](https://github.com/sq5bpf/hpe_open) found out that `.hpe` files are nothing more than XORed GZip files which can be converted to/from plain text pretty easily. Once you get something tab-delimited to work with, you can use pretty much any tool you like on any platform imaginable to modify that text and pump it back into Uniden's awful Sentinel application.
 
 This tool is a proof-of-concept in Python 3. It has no meaningful error handling of any kind but it's free.
+
+# Usage
+
+## Decoding
+
+`./hpeutil.py decode test.hpe`
+
+## Encoding
+
+`./hpeutil.py encode test.txt`
