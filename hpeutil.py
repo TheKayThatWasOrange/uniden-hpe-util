@@ -22,14 +22,14 @@ import shutil
 # sell more scanners if they stopped being
 # clever and stuck to CSV files the entire
 # world can work with.
-UNIDEN_OBFUSCATION_KEY = 0xC
+UNIDEN_OBFUSCATION_KEY = 0x0C
+UNIDEN_BYTE_ORDER = "little"
 
 def xor_byte(byte: bytes) -> bytes:
-  order = 'little'
-  byte_as_int = int.from_bytes(byte, order)
+  byte_as_int = int.from_bytes(byte, UNIDEN_BYTE_ORDER)
   xored = byte_as_int ^ UNIDEN_OBFUSCATION_KEY
 
-  return xored.to_bytes(1, order)
+  return xored.to_bytes(1, UNIDEN_BYTE_ORDER)
 
 def decode_hpe_file(file_path: str, cleanup: bool):
   path, _ = os.path.splitext(file_path)
