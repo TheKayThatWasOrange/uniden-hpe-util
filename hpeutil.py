@@ -31,7 +31,7 @@ def xor_byte(byte: bytes) -> bytes:
 
   return xored.to_bytes(1, order)
 
-def decode_hpe_file(file_path: str):
+def decode_hpe_file(file_path: str, cleanup: bool):
   path, _ = os.path.splitext(file_path)
   temp_gzip_file = f"{path}_tmp_decoding.gz"
   dest_file = f"{path}_decoded.txt"
@@ -50,9 +50,10 @@ def decode_hpe_file(file_path: str):
       with open(dest_file, "wb") as unzipped:
         shutil.copyfileobj(zipped, unzipped)
   finally:
-    os.remove(temp_gzip_file)
+    if cleanup:
+      os.remove(temp_gzip_file)
   
-def encode_hpe_file(file_path: str):
+def encode_hpe_file(file_path: str, cleanup: bool):
   path, _ = os.path.splitext(file_path)
   temp_gzip_file = f"{path}_tmp_encoding.gz"
   dest_file = f"{path}_encoded.hpe"
@@ -72,16 +73,17 @@ def encode_hpe_file(file_path: str):
         while (byte := zipped.read(1)):
           dest.write(xor_byte(byte))
   finally:
-    os.remove(temp_gzip_file)
+    if cleanup:
+      os.remove(temp_gzip_file)
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description="Tool for dealing with Uniden's offshore cubicle software")
   parser.add_argument('operation', choices=['encode', 'decode'])
   parser.add_argument('filename')
+  parser.add_argument('--no-cleanup', action='store_true')
   args = parser.parse_args()
 
   if args.operation == 'decode':
-    decode_hpe_file(args.filename)
+    decode_hpe_file(args.filename, args.no_cleanup == False)
   elif args.operation == 'encode':
-    encode_hpe_file(args.filename)
-    
+    encode_hpe_file(args.filename, args.no_cleanup == False)
