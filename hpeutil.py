@@ -78,9 +78,9 @@ def encode_hpe_file(file_path: str, cleanup: bool):
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description="Tool for dealing with Uniden's offshore cubicle software")
-  parser.add_argument('operation', choices=['encode', 'decode'])
-  parser.add_argument('filename')
-  parser.add_argument('--no-cleanup', action='store_true')
+  parser.add_argument('operation', choices=['encode', 'decode'], help="Either 'encode' or 'decode'.")
+  parser.add_argument('filename', help="Path to the file that you want to operate on.")
+  parser.add_argument('--no-cleanup', action='store_true', help="Leaves intermediate .gz files in place for debugging purposes.")
   args = parser.parse_args()
 
   if args.operation == 'decode':
