@@ -49,7 +49,7 @@ Your best bet is to create one of the channels you need in Sentinel manually, ex
 # Getting Senitnel To Run Without Windows
 
 1. Install [CrossOver](https://www.codeweavers.com/crossover)
-2. Download one of their pre-packaged ["bottles"](https://www.codeweavers.com/xfer/Dependency_archive/) that includes the .NET framework
+2. Download one of their pre-packaged ["bottles"](https://www.codeweavers.com/xfer/Dependency_archive/) that includes the .NET framework. Most geriatric radio dorks are still on Windows 7 so no need to be even remotely up-to-date.
 3. Import the bottle you downloaded
 4. Install Sentinel into that same bottle
 5. Profit
