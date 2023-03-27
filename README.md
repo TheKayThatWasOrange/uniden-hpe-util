@@ -20,11 +20,11 @@ Assuming that the executable bit is still set on the file:
 
 ## Decoding
 
-`./hpeutil.py decode test.hpe`
+    `./hpeutil.py decode test.hpe`
 
 ## Encoding
 
-`./hpeutil.py encode test.txt`
+    `./hpeutil.py encode test.txt`
 
 ## What's In An HPE File Anyway?
 
