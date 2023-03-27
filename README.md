@@ -1,6 +1,6 @@
 # Uniden HPE File Converter
 
-If you want to use an absurdly expensive Uniden brand radio scanner that doesn't even come with its own GPS tranceiver you have to contend with some seriously asstastic Windows software known as "Sentinel" to program custom channel information into it. Sentinel's automation capabilities begin and end with the importing/exporting of opaque, undocumented `.hpe` files.
+If you want to use an absurdly expensive Uniden brand radio scanner that doesn't even come with its own GPS tranceiver you have to contend with some seriously asstastic Windows software known as "Sentinel" to program custom channel information into it. Sentinel's automation capabilities begin and end with the importing/exporting of opaque, undocumented `.hpe` files. Uniden assumes that the HPE files you want are already on the internet and tells you to kick rocks if they aren't.
 
 Need to add thousands and thousands of custom channels which no unemployable boomer in the world has ever cared enough about to post on some radio dork forum for radio dorks? Well you get to sit there and create them yourself one-by-friggin-one because Uniden hates you.
 
