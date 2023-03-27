@@ -36,4 +36,4 @@ C-Freq			163.0625	Off	163062500	FM	TONE=Srch	208	Off	2	0	Off	Auto
 File	HomePatrol Export File
 ```
 
-If you know what Python is then you can probably figure out how to do something useful with that.
+Your best bet is to create one of the channels you need in Sentinel manually, export that to HPE, run this tool and then write whatever you need to extend that example file. Once you're done, convert it back to HPE and go import it into Sentinel. If you're extremely lucky, it'll actually work and Santa will bring you a scanner you can actually use.
