@@ -34,19 +34,7 @@ Assuming that the executable bit is still set on the file:
 
 They look like this (Who needs named columns? Guess!):
 
-```
-TargetModel	HomePatrol-1
-FormatVersion	2.00
-Conventional			Federal 163-165 MHz	Off		Conventional
-C-Group			Analog Search	Off	0.000000	0.000000	0.0	Circle
-C-Freq			163.0000	Off	163000000	FM	TONE=Srch	208	Off	2	0	Off	Auto
-C-Freq			163.0125	Off	163012500	FM	TONE=Srch	208	Off	2	0	Off	Auto
-C-Freq			163.0250	Off	163025000	FM	TONE=Srch	208	Off	2	0	Off	Auto
-C-Freq			163.0375	Off	163037500	FM	TONE=Srch	208	Off	2	0	Off	Auto
-C-Freq			163.0500	Off	163050000	FM	TONE=Srch	208	Off	2	0	Off	Auto
-C-Freq			163.0625	Off	163062500	FM	TONE=Srch	208	Off	2	0	Off	Auto
-File	HomePatrol Export File
-```
+![hpeexample](https://user-images.githubusercontent.com/129024004/228380496-4a2f8a51-164c-4c5d-b02c-99bf87dce44a.gif)
 
 Since you won't know what goes where or what constitutes a valid value, your best bet is to create one of the channels you need in Sentinel manually, export that to HPE, run this tool and then write whatever you need to extend that template file.
 
