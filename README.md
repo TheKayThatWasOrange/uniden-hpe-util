@@ -53,3 +53,5 @@ Your best bet is to create one of the channels you need in Sentinel manually, ex
 3. Import the bottle you downloaded
 4. Install Sentinel into that same bottle
 5. Profit
+
+If you get some nonsensical, broken English error message like _"Reading hpe file was failure."_ then you probably didn't pick the right bottle. You can try to install .NET yourself if you actually know how Wine works but I don't so I didn't.
