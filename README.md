@@ -28,7 +28,7 @@ Assuming that the executable bit is still set on the file:
 
 # What's In An HPE File Anyway?
 
-They look like this:
+They look like this (Who needs named columns? Guess!):
 
 ```
 TargetModel	HomePatrol-1
