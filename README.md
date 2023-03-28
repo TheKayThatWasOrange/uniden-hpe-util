@@ -32,7 +32,7 @@ Assuming that the executable bit is still set on the file:
 
 # What's In An HPE File Anyway?
 
-They look like this (Who needs named columns? Guess!):
+They look like this after you unpack them (Who needs named columns? Guess!):
 
 ![hpeexample](https://user-images.githubusercontent.com/129024004/228380496-4a2f8a51-164c-4c5d-b02c-99bf87dce44a.gif)
 
