@@ -8,7 +8,7 @@ But what if you need to add thousands and thousands of custom channels with spec
 
 Now you might be tempted to think that you can just clone a "template" channel over and over and then proceed to edit the frequencies en-masse to speed through all that data entry tedium the way you might in an actual spreadsheet, but then you'd be living in some kind of Bizarro world where Uniden hires competent product managers that care about their users. Even Sony's never done that. No folks, The Sentinel is here to guard you from hippie socialist constructs like productivity and ease of use. Don't like it? What are you? Some kind of ANTIFA snowflake?
 
-![boomer-computer-monsters](https://user-images.githubusercontent.com/129024004/228383596-44611207-5441-4d1c-911a-ad91e08dd01e.gif)
+![boomer-computer-monsters](https://user-images.githubusercontent.com/129024004/228384261-88177861-9ee9-4076-9f3f-a2490f7f75bc.gif)
 
 Many angry stepdads with Earthlink email addresses will smugly point out that there's a cataract-inducing [aftermarket application](https://proscan.org/) which you can PayPal some flag-waving geezer $50 for if you want more programming flexibility and less money in your pocket, but it is similar to Uniden's own offering in that it will only run on a Gateway PC your grandson set up for you 30 years ago to "thank" you for all the handmade wooden toys he threw away. Also every cent that flies through PayPal results in Peter Thiel's ego swelling faster than his prostate and I think we've all had quite enough of that.
 
