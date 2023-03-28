@@ -20,8 +20,10 @@ import shutil
 # This is what passes for clever in many
 # parts of the world. Maybe Uniden would
 # sell more scanners if they stopped being
-# clever and stuck to CSV files the entire
-# world can work with.
+# clever and stuck to CSV or JSON files the
+# entire world can work with. They probably 
+# have some good ol' boy non-compete agreement
+# with the ProScan guy. 
 UNIDEN_OBFUSCATION_KEY = 0x0C
 UNIDEN_BYTE_ORDER = "little"
 
