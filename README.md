@@ -2,7 +2,7 @@
 
 If you want to use an [absurdly expensive Uniden brand radio scanner](https://www.zipscanners.com/products/sds100-uniden-police-scanner) that doesn't even come with its own GPS tranceiver you have to contend with some seriously asstastic Windows software known as [Sentinel](http://info.uniden.com/twiki/bin/view/UnidenMan4/BCDx36HPSentinel) to program custom channel information into it on a big boy keyboard. Sentinel's automation capabilities begin and end with the importing and exporting of opaque, undocumented `.hpe` files that look like pure binary gibberish in a hex editor. Uniden assumes that the HPE files you want are already on the internet and tells you to kick rocks if they aren't.
 
-![hpehex](https://user-images.githubusercontent.com/129024004/228376801-96fe070e-b8f4-42fc-bd5d-3dfa71a03c79.jpg)
+![hpehex](https://user-images.githubusercontent.com/129024004/228378228-a6015a04-5131-4752-987d-b4c712207f7a.jpg)
 
 But what if you need to add thousands and thousands of custom channels with specific CTCSS tones which no unemployable boomer in the world has ever cared enough about to post on some radio dork forum for Justin Wilson lookalikes who drive Jeeps? Well you get to sit there and give yourself carpal tunnel syndrome cilcking through billions and billions of individual settings fields one-by-friggin-one because Uniden hates anyone who has a job.
 
