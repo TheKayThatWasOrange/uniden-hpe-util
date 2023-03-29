@@ -50,6 +50,8 @@ Once you're done adding channels convert it back to HPE and go import it into Se
 4. Install Sentinel into that same bottle
 5. Profit
 
-![UnidenError](https://user-images.githubusercontent.com/129024004/228379961-894d5854-4efa-4378-8c55-6530de5e05ff.gif)
+![sentineled](https://user-images.githubusercontent.com/129024004/228394451-42a5b224-5baa-4c83-ab8d-f2d6e3990893.gif)
 
 If you get some nonsensical, broken English error message like _"Reading hpe file was failure."_ then you probably didn't pick the right bottle. You can try to install .NET yourself if you actually know how Wine works but I don't so I didn't.
+
+![UnidenError](https://user-images.githubusercontent.com/129024004/228379961-894d5854-4efa-4378-8c55-6530de5e05ff.gif)
