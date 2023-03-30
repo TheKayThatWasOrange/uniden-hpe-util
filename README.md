@@ -48,7 +48,8 @@ Once you're done adding channels convert it back to HPE and go import it into Se
 2. Download one of their pre-packaged ["bottles"](https://www.codeweavers.com/xfer/Dependency_archive/) that includes the .NET framework. Most Uniden executives are still running Windows 7 so no need to be even remotely up-to-date. If that page asks you for a password give it `demo`.
 3. Import the bottle you downloaded
 4. Install Sentinel into that same bottle
-5. Profit
+5. Map your drive in: https://www.codeweavers.com/support/wiki/mac/mactutorial/mapdrive
+6. Profit
 
 ![sentineled](https://user-images.githubusercontent.com/129024004/228398643-d992458f-fbd4-4e93-8b47-5fb35819d0eb.jpg)
 
