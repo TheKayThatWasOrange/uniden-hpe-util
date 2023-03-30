@@ -44,11 +44,13 @@ Once you're done adding channels convert it back to HPE and go import it into Se
 
 # Getting Uniden Senitnel To Run Without Buying A Windows License You Have Absolutely No Use For
 
+Current versions of Sentinel seem to have introduced some bizarre new requirement in that they will only read and write scanner data to a drive which identifies itself as "Removable." Wine does not seem to support creating this kind of drive, so even if you explicity map your SD card in and can see it just fine, Sentinel will pretend it's not there. Long story short, don't waste your time unless you know a whole lot about Wine.
+
 1. Install [CrossOver](https://www.codeweavers.com/crossover)
 2. Download one of their pre-packaged ["bottles"](https://www.codeweavers.com/xfer/Dependency_archive/) that includes the .NET framework. Most Uniden executives are still running Windows 7 so no need to be even remotely up-to-date. If that page asks you for a password give it `demo`.
 3. Import the bottle you downloaded
 4. Install Sentinel into that same bottle
-5. Map your drive in: https://www.codeweavers.com/support/wiki/mac/mactutorial/mapdrive
+5. Map your drive in (if that's even possible anymore)
 6. Profit
 
 ![sentineled](https://user-images.githubusercontent.com/129024004/228398643-d992458f-fbd4-4e93-8b47-5fb35819d0eb.jpg)
